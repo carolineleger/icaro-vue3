@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="full">
+    <Header />
+    <About />
+    <Portfolio />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import About from './components/About.vue'
+import Header from './components/Header.vue'
+import Portfolio from './components/Portfolio.vue'
+import Footer from './components/Footer.vue'
+
+import {WOW} from 'wowjs'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { About, Header, Portfolio, Footer },
+  mounted() { new WOW().init() }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import "./assets/sass/main.scss";
 </style>

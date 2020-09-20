@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ABS0019-300x250-05-censusnight-sharehouse-v2</title>
+<!-- write your code here -->
+
+<script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+<script type="text/javascript">
+    var clickTag = "http://www.google.com/";
+    var touchmoved = false;
+	function inlineInit($this) {
+		var canvas = document.getElementById("canvas");
+
+		canvas.addEventListener("click", clickthrough);
+		canvas.addEventListener("touchstart", clickthrough);
+		canvas.addEventListener("touchmove", clickthrough);
+		canvas.addEventListener("touchend", clickthrough);
+	}
+	function clickthrough($evt) {
+		// Mobile Scrolling click detection solution
+		//console.log($evt.type)
+		if ($evt.type == "touchstart") {
+			touchmoved = false;
+		} else if ($evt.type == "touchmove") {
+			touchmoved = true;
+		} else if ($evt.type == "touchend" || $evt.type == "click") {
+			if (!touchmoved) {
+				touchmoved = false;
+				//window.open(clickTag, "_blank");
+				Enabler.exit('ClickTag Exit');
+			}
+			touchmoved = false;
+		}
+		
+	}
+    function preInit() {
+        if (Enabler.isInitialized()) {
+            pageLoadedCheck();
+        } else {
+            Enabler.addEventListener(studio.events.StudioEvent.INIT, pageLoadedCheck);
+        }
+    }
+
+    function pageLoadedCheck() {
+        if (Enabler.isPageLoaded()) {
+            init();
+        } else {
+            Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, init);
+        }
+    }
+
+    window.addEventListener('load', preInit);
+</script>
+<script type="text/javascript" src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    
+
+<script src="ABS0019-300x250-05-censusnight-sharehouse-v2.js"></script>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib.ABS0019300x25005censusnightsharehousev2();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>
+
+<!-- write your code here -->
+
+</head>
+<body style="background-color:#D4D4D4;margin:0px;">
+	<canvas id="canvas" width="300" height="250" style="background-color:#000000"></canvas>
+</body>
+</html>

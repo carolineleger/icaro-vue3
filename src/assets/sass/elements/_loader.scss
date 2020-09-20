@@ -1,0 +1,37 @@
+#loader-wrapper {
+  @include size(100%);
+  background: $dark-purple;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  #loader {
+    @include position (absolute, 0, 0, 0, 0);
+    @include size(100px, 170px);
+    margin: auto;
+
+    #percent {
+      @include size(100px);
+      position: relative;
+    }
+
+    .progressbar-text {
+      color: $white;
+    }
+  }
+}
+
+/* Loaded */
+.loaded {
+  overflow-x: hidden;
+
+  #loader-wrapper {
+    -webkit-transform: translateY(-100%);
+    -webkit-transition: all 0.3s 0.6s ease-out;
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    transition: all 0.3s 0.6s ease-out;
+    visibility: hidden;
+  }
+}

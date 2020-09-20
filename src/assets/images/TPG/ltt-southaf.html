@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="http://jamesallardice.github.io/Placeholders.js/assets/js/placeholders.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Learn to trade</title>
+
+<style type="text/css">
+
+	body{
+		font-family:Arial, Helvetica, sans-serif;
+		width:100%;
+		margin:0;padding:0;
+		color:#666666;
+		background-color:#e1e1e1;
+	}
+	
+	@font-face {
+		font-family:"zil";
+		src: url("zil.ttf");
+		src: url('zil.ttf') format('truetype');
+	}
+	
+	h1{
+		font-size:35px;
+		color:#FFFFFF;
+		font-family:zil, Arial, Helvetica, sans-serif;
+		font-weight:400;
+	}
+
+	h2{
+		color:#FFFFFF;
+		padding:0px 15px;
+		font-family:zil, Arial, Helvetica, sans-serif;
+		text-align:center;
+		margin-top:10px;
+		font-weight:400;
+	}
+
+	.wrapper{
+		width:1100px;
+		margin:auto;
+		background-color:#FFF;
+	}
+	
+	.headercontent{
+		height:570px;
+		background-repeat:no-repeat;
+		background-image:url(img/header.jpg);
+	}
+	
+	.social{
+		text-align:right;
+		padding-top:20px;
+		padding-right:20px;
+	}
+	
+	.intro{
+		padding-top:15px;
+		text-align:center;
+		clear:both;
+	}
+	
+
+	.form{
+		height:370px;
+		float:right;
+		margin-right:15px;
+		padding-top:10px;
+		width:420px;
+		background-color:#1f8fbe;
+	}
+	
+	.formtable{
+		margin:0px 15px;
+	}
+	
+	.formtable td{
+		padding-bottom:15px;
+	}
+	
+	.textfieldname{
+		height:25px;
+		margin-right:10px;
+		width:185px;
+	}
+	
+	.textfield{
+		height:25px;
+		width:385px;
+	}
+	
+	.selectbox{
+		height:27px;
+		width:390px;
+	}
+	
+	.submit{
+		color:#FFFFFF;
+		width:390px;
+		height:40px;
+		background-color:transparent;
+		background-image:url(img/bgsubmit.jpg);
+		background-repeat:repeat-x;
+		font-size:20px;
+		text-shadow:1px 1px 1px #393;
+		border:none;
+		border-radius:5px;
+		box-shadow:2px 2px 2px #36C;
+		cursor:pointer;
+	}
+	
+	.firstblock{
+		background-color:#FFFFFF;
+		height:380px;
+	}
+
+	.firstblock h1{
+		color:#05528c;
+		text-align:center;
+		clear:both;
+	}
+	
+	.blockicon{
+		text-align:center;
+		float:left;
+		height:120px;
+		width:330px;
+		padding:5px 15px;
+		
+	}
+	
+	.secondblock{
+		background-color:#05528c;
+		height:330px;		
+	}
+	
+	.secondblock h1{
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	
+	.secondblockcontent{
+		margin-top:15px;
+		width:720px;
+		float:left;
+		padding:5px 15px;
+	}
+	.secondblock p{
+		color:#FFFFFF;
+		text-align:justify;
+	}
+	
+	.didyouknow{
+		background-color:#aae1e6;
+		float:right;
+		height:345px;
+		width:270px;
+		margin-top:-10px;
+		margin-right:20px;
+		box-shadow:3px 3px 3px #666666;
+		padding:0px 10px;
+		color:#000000;
+		text-align:justify;
+	}
+	
+	.imagebulb{text-align:center;}
+	
+	.didyouknow h1{
+		color:#05528c;
+		margin-top:0px;
+		margin-bottom:5px;
+	}
+	
+	.disclaimer{
+		clear:both;
+		margin:auto;
+		width:1080px;
+		text-align:justify;
+		padding:10px;
+		font-size:10px;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.wrapper{width:740px;}
+		.disclaimer{width:720px;}
+		h1{font-size:27px;}
+		.firstblock{height:520px;}
+		.didyouknow{clear:both; width:680px;margin:auto;box-shadow:none;padding:0px 15px;float:none;height:280px;}
+		.secondblock{height:580px}
+	}
+	
+	@media only screen and (max-width: 480px) {
+		.wrapper{width:440px;}
+		.disclaimer{width:420px;}
+		.social img{height:30px;}
+		.social{padding-right:5px;padding-top:30px;}
+		h1{font-size:24px;}
+		.blockicon{width:210px;padding:5px;}
+		.form{margin-right:10px;}
+		.secondblock{height:690px}
+		.secondblockcontent{width:400px;}
+		.didyouknow{width:400px;padding:0px 10px;height:300px;}
+	}
+	
+	@media only screen and (max-width: 320px) {
+		.wrapper{width:300px;}
+		.disclaimer{width:280px;}
+		h1{font-size:21px;}
+		h2{font-size:18px;}
+		.social img{height:20px;}
+		.intro{padding-top:50px;}
+		.social{text-align:left;padding-top:5px;text-align:center;}
+		.didyouknow{width:270px;height:330px;}
+		.form{width:280px;}
+		.textfield{width:260px;}
+		.textfieldname{width:122px;}
+		.selectbox,.submit{width:265px;}
+		.formtable{margin:0px 5px;}
+		.blockicon{width:270px;}
+		.blockicon img{height:50px;}
+		.firstblock{height:910px;}
+		.secondblockcontent{width:270px;}
+		.secondblock{height:870px;}
+	}
+	
+
+	
+</style>
+
+</head>
+
+<body>
+<div class="wrapper">
+	<!--HEADER-->
+    
+    <div class="headercontent">
+    <div class="social">
+    <a href=""><img src="img/facebook.png" alt="" border="0"/></a>
+    <a href=""><img src="img/twitter.png" alt="" border="0"/></a>
+    <a href=""><img src="img/linkedin.png" alt="" border="0"/></a>
+    <a href=""><img src="img/g+.png" alt="" border="0"/></a>
+    </div>
+    	<div class="intro"><h1>Your pathway to becoming a private financial trader</h1></div>
+        <div class="form">
+        	<h2>Complete the form to attend our FREE workshop</h2>
+                <!--FORM-->
+                <form action="">
+                <table border="0" cellspacing="0" cellpadding="0" class="formtable">
+                  <tr>
+                    <td>
+                    <input type="text" name="FistName" id="FistName" class="textfieldname" placeholder="First Name" />
+                    </td>
+                    <td>
+                    <input type="text" name="LastName" id="LastName" class="textfieldname" placeholder="Last Name"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="text" name="PhoneNumber" id="PhoneNumber" class="textfield" placeholder="Phone Number"/></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="text" name="Email" id="Email" class="textfield" placeholder="Email"/></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input type="text" name="Postcode" id="Postcode" class="textfield" placeholder="Post Code"/></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><select name="workshop" id="wotkshop" class="selectbox"><option>Enter your postcode and select a workshop</option> </select></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2"><input name="submit" type="button" value="Join our workshop now!" class="submit"/></td>
+                  </tr>
+                </table>
+                </form>
+                <!--END FORM-->
+    	 </div>
+  
+    </div>
+   <!--END HEADER-->
+    
+   <!--FIRST BLOCK -->
+   <div class="firstblock">
+   <h1>What  you will discover at our FREE workshop</h1>
+   
+   	<div class="blockicon">
+    	<img src="img/lp_03.jpg" alt="" /><br/>
+        Understanding the earning potential trading the currency market.
+   </div>
+    
+    <div class="blockicon">
+    	<img src="img/lp_05.jpg" alt="" /><br/>
+         Learn the fundamentals of trading
+    </div>
+    
+    <div class="blockicon">
+    	<img src="img/lp_07.jpg" alt="" /><br/>
+        How to identify potential trades in the market
+    </div>
+    
+    <div class="blockicon">
+    	<img src="img/lp_12.jpg" alt="" /><br/>
+        4 trading strategies to implement when identifying trades
+    </div>
+    
+    <div class="blockicon">
+    	<img src="img/lp_13.jpg" alt="" /><br/>
+        Understanding the elements of trading psychology and its importance to trading consistently
+    </div>
+
+    <div class="blockicon">
+    	<img src="img/lp_15.jpg" alt="" /><br/>
+        How to use a risk management technique that will allow you to reduce your risk to 1% of any trade
+    </div>
+       
+   </div>
+   
+    <!--END FIRST BLOCK -->
+	
+    <!--SECOND BLOCK-->
+    <div class="secondblock">
+        <div class="secondblockcontent">
+        <h1>Why trade the financial market</h1>
+        <p>Conventional investments are no longer the smart investment, nor are they providing us with the returns we need. With the rate of inflation sitting just over 5%, putting your money in conventional investments actually means that your money is worth less when it is returned to you. So why not take control of your money and earn the returns you so deserve. </p>
+        
+        <h1>What you need to start trading</h1>
+        <p>All you need is a laptop and an internet connection and you're ready to go. Full time or part time, from as little as 30 minutes a day, is enough to start generating a sustainable income. </p>
+        </div>
+        
+        <div class="didyouknow">
+        <div class="imagebulb"><img src="img/lp_21.jpg" alt=""></div>
+        <h1>Did you know?</h1>
+        Did you know that many private financial traders take home R500,000 to R10m per annum - with some traders starting with less than R15,000 in their trading accounts.
+        </div>
+    </div>
+	<!--END SECOND BLOCK-->
+    <p></p>
+
+</div>
+    <div class="disclaimer">
+    © 2012 Learn To Trade. The Content has been prepared by Learn to Trade Limited (ACN:138178542 AFSL 339557) for general information and educational purposes only and is not (and cannot be construed or relied upon as) personal advice nor as an offer to buy/sell/subscribe to any of the financial products mentioned herein. No investment objectives, financial circumstances or needs of any individual have been taken into consideration in the preparation or delivery of the Content. Financial products are complex, entail risk of loss, may rise and fall, and are impacted by a range of market and economic factors, and you should always obtain professional advice to ensure trading or investing in such products is suitable for your circumstances, and ensure you obtain, read and understand any applicable offer document.
+    </div>
+</body>
+</html>

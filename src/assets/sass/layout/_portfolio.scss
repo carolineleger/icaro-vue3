@@ -1,0 +1,50 @@
+//⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
+// PORTFOLIO
+//⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
+
+.portfolio-wrapper {
+    background-color: $beige;
+	margin-top: -14px;
+	position: relative;
+	text-align: center;
+	margin: auto;
+    color: $dark-purple;
+    padding: 70px 0 50px;
+    border-bottom: solid 15px #2b2930;
+
+    .contenu {
+        margin: auto;
+        min-height:100px;
+        padding: 10px 0px;
+        width: 85%;
+    }
+    
+    .portfolio {
+        display: inline-block;
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+        max-width: 1300px;
+
+        .description {
+            @include position (absolute, null, null, 5px, 0px);
+            @include size(290px, 285px);
+            position:absolute; 
+            display:none; 
+            padding:10px;
+            width:290px;
+            height:285px;
+            text-align:left;
+
+            a {
+                font-size:13px;
+                color: $white;
+                height: 285px;
+                text-decoration: none;
+                display: block;
+            }      
+        }
+
+    }	
+}
+

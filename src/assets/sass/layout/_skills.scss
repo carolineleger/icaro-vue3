@@ -1,0 +1,124 @@
+//⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
+// SKILLS
+//⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
+
+
+.skills-wrapper {
+    overflow: hidden;
+    height: 900px;
+    position: relative;
+
+    .skills {
+        width:100%;
+        text-align:center;
+        clear: both;
+    }
+    
+    ul {
+        @include size(100%);
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .contentprogress{
+        width: 100%;
+        top: 320px;
+        position: absolute;
+
+        .progress {
+            position: relative;
+            text-align:center;
+            width: 50%;
+            margin: auto;
+
+            li {
+                position: relative;
+                text-align: center;
+                color: #FFFFFF;
+                font-weight: 100;
+                margin: 1%;
+                float: left;
+                display: table-cell; 
+                width: 130px;
+            }
+        }
+    }
+    
+
+    .skills1 {
+        background-image: url(~@/assets/images/skills/l4.jpg); 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 120%;
+        margin-left:-50px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .skills2 {
+        max-width: 120%!important;
+        width: 100%;
+        min-width:750px;
+    }
+
+    .skills3, .skills4 {
+        width: 115%;
+        max-width:120%!important;
+        min-width:750px;
+    }
+
+    .skills4 {
+        margin: -130px 0 0 -150px;
+        min-width:750px;
+    }
+
+    .skills3 {
+        margin-left: -20px;
+        min-width: 850px;
+    }
+
+    .skills5 {
+        width:100%; 
+        position: absolute; 
+        bottom: 50px;
+        min-width:750px;
+    }
+
+    .bubbles {
+        -webkit-animation: bubbles 40s forwards infinite;
+        animation: bubbles 40s forwards infinite;
+        position:absolute;
+        bottom:-20px;
+        padding-left:20%;
+    }
+    
+    @-webkit-keyframes bubbles {
+        0% {padding-bottom:-20px;left:0px;}
+        25% {left:20%;}
+        50% {left:5%;opacity:0}
+        100% {padding-bottom:100%;left:0%;opacity:0}	
+    }
+    
+    @keyframes bubbles {
+        0% {padding-bottom:-20px;left:0px;}
+        25% {left:20%;}
+        50% {left:5%;opacity:0}
+        100% {padding-bottom:100%;left:0%;opacity:0}	
+    }
+    
+    .bubbles img {width:100%;max-width:100%;}
+
+    .contact {
+        right: 10px !important; 
+        position: absolute; 
+        bottom: 10px;}
+}
