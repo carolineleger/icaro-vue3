@@ -4,6 +4,10 @@
 
 $baseURL: "http://icaro-designs.com/images/";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 320px;
   max-width: 2560px;
@@ -90,7 +94,7 @@ img[data-src] {
   opacity: 0;
 }
 
-img.lazyloaded {
+img[lazy=loaded] {
   -webkit-transition: opacity 0.5s linear 0.2s;
   -moz-transition: opacity 0.5s linear 0.2s;
   opacity: 1;

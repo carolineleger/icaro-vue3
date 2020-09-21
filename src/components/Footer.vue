@@ -2,14 +2,14 @@
   <div class="footer-wrapper">
     <div class="footer-container lazy">
       <div class="phone-container lazy">
-        <div class="wow phone bounce" ng-click="togglePhone(!decroche)"></div>
+        <div class="wow phone bounce" v-on:click="togglePhone()"></div>
         <img
           src="../assets/images/handler.png"
           class="wow handler bounce"
-          ng-class="{'open': decroche == true}"
+          v-bind:class="{'open': decroche}"
         />
 
-        <div class="bulle" ng-class="{'none': decroche == false}">
+        <div class="bulle" v-bind:class="{ 'none': !decroche }">
           <a href="tel:0421433621">0421 433 621</a>
         </div>
       </div>
@@ -53,5 +53,16 @@
 <script>
 export default {
   name: "Footer",
+  data() {
+    return {
+      decroche: false,
+    };
+  },
+  methods: {
+    togglePhone() {
+
+      this.decroche =! this.decroche;
+    },
+  },
 };
 </script>

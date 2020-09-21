@@ -20,13 +20,13 @@
             <tr>
                 <td width="45%" class="about-CV">
                     <h2>I'm also a front end developer with an eye for design </h2>
-                    <a href="images/CV-CLeger.pdf" target="_blank">
+                    <a href="http://icaro-designs.com/images/CV-CLeger.pdf" target="_blank">
                         <div class="wow button rubberBand" data-wow-delay="1s"> Download CV</div>
                     </a>
 
                     <div class= "couch-container"></div>
                     <div class= "wow blink light"></div>
-                    <a href="images/CV-CLeger.pdf" target="_blank"><div class= "wow eye-blink totoro-eyes"></div></a>
+                    <a href="http://icaro-designs.com/images/CV-CLeger.pdf" target="_blank"><div class= "wow eye-blink totoro-eyes"></div></a>
                 </td>
 
                 <td width="55%" class="about-description">

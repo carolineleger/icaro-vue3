@@ -18,7 +18,9 @@ import {WOW} from 'wowjs'
 export default {
   name: 'App',
   components: { About, Header, Portfolio, Footer },
-  mounted() { new WOW().init() }
+  mounted() { 
+    new WOW().init()
+  }
 }
 </script>
 
