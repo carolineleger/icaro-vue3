@@ -19,7 +19,7 @@
         <table>
             <tr>
                 <td width="45%" class="about-CV">
-                    <h2>I'm also a front end developer with an eye for design </h2>
+                    <h2 class="wow fadeIn">I'm also a front end developer with an eye for design </h2>
                     <a href="http://icaro-designs.com/images/CV-CLeger.pdf" target="_blank">
                         <div class="wow button rubberBand" data-wow-delay="1s"> Download CV</div>
                     </a>
@@ -29,7 +29,7 @@
                     <a href="http://icaro-designs.com/images/CV-CLeger.pdf" target="_blank"><div class= "wow eye-blink totoro-eyes"></div></a>
                 </td>
 
-                <td width="55%" class="about-description">
+                <td width="55%" class="about-description wow fadeIn">
                     <b>About me:</b> Born in France, I was always interested in design and new technologies. My studies and work experiences have developed my sense of creativity and my technical skills.
                     Also passionate about travelling and discovery, I have worked in countries with rich cultures and landscapes, a great source of inspiration in everyday life!
                     <br/>

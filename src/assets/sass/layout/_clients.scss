@@ -1,19 +1,27 @@
-
 //⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
-// GRAY TONES
+// ABOUT
 //⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
 
+.clients {
+  background-color: $white;
+  padding: 50px 30px;
 
-$white: #fff;
-$black: #000;
+  .logo-wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
+    .logo {
+      max-width: 150px;
+      padding: 0 20px;
+    }
+  }
 
-$purple : #704f51;
-$light-purple: #998C8E;
-$dark-purple: #352021;
-
-$light-green: #9b906f;
-$green-hover: #7f765b;
-
-$beige: #e6e6e6;
-$dark-gray: #333333;
+  .underline {
+    @include size(70px, 3px);
+    background: #333333;
+    margin: 0px auto 10px;
+  }
+}

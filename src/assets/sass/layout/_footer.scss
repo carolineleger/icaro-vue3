@@ -4,18 +4,20 @@
 
 
 .footer-wrapper {
-    @include size (100%, 180px);
+    @include size (100%, 225px);
     background-color: #4f4c56;
     background-image: url('../~@/assets/images/brick.jpg');
     background-size: auto 400px;
     background-repeat:repeat;
     background-position: top;
+    border-top: solid 4px $dark-purple;
+    padding: 40px 30px;
 
     .footer-responsive {
-        font-size:0.9em;
-        padding-top:15px;
-        display:none;
-        text-align:center;
+        font-size: 0.9em;
+        padding-top: 15px;
+        display: none;
+        text-align: center;
 
         a {color:white}
 
@@ -25,8 +27,8 @@
     .footer-container {
         width: 70%;
         max-width: 1000px;
-        margin:auto;
-        display:flex;
+        margin: auto;
+        display: flex;
         align-items: center;
         justify-content: center;
 

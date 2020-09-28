@@ -3,184 +3,216 @@
 //⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
 
 .portfolio-wrapper {
-    background-color: $beige;
-	margin-top: -14px;
-	position: relative;
-	text-align: center;
-	margin: auto;
-    color: $dark-purple;
-    padding: 70px 0 50px;
-    border-bottom: solid 15px #2b2930;
+  background-color: $beige;
+  margin-top: -14px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  color: $dark-purple;
+  padding: 70px 0 0;
 
-    .contenu {
-        margin: auto;
-        min-height:100px;
-        padding: 10px 0px;
-        width: 85%;
+  .underline {
+    @include size(70px, 3px);
+    background: #333333;
+    margin: 0px auto 40px;
+  }
+
+  .contenu {
+    margin: auto;
+    min-height: 100px;
+    padding: 10px 0px;
+    width: 85%;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    overflow: hidden;
+    max-width: 1300px;
+    justify-content: center;
+
+    .item {
+      height: 300px;
+      transition: height 500ms ease 0s;
+      margin: 14px 7px 0 7px;
+
+      &.extended {
+        height: 820px;
+      }
     }
 
-    .portfolio {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 20px auto;
-        overflow: hidden;
-        max-width: 1300px;
+    .card {
+      @include size(300px);
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
 
-        .item {
-            height: 300px;
-            transition: height 500ms ease 0s;
-            margin: 14px 7px 0 7px;
+      &:hover > .card-hover {
+        opacity: 1;
+      }
 
-            &.extended {
-                height: 820px;
-            }
+      .card-hover {
+        position: absolute;
+        background: rgba(48, 48, 48, 0.8);
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 300ms;
+        cursor: pointer;
+
+        span {
+          display: block;
+          padding: 10px 0;
+          margin: 40px 20px 20px 20px;
+          text-transform: uppercase;
+          font-weight: normal;
+          color: rgba(255, 255, 255, 0.9);
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    .card[lazy="loaded"] {
+      opacity: 0;
+      animation-name: fadein;
+      animation-duration: 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-direction: normal;
+      animation-timing-function: ease-out;
+      @keyframes fadein {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+
+    .arrow {
+      border: solid transparent;
+      top: auto;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: relative;
+      pointer-events: none;
+      border-bottom-color: $dark-purple;
+      border-width: 15px;
+      left: 50%;
+      margin: -13px 0 0 -15px;
+      opacity: 0;
+
+      &.visible {
+        opacity: 1;
+      }
+    }
+
+    .expander {
+      background: $dark-purple;
+      color: $beige;
+      position: absolute;
+      top: auto;
+      height: 0;
+      left: 0;
+      width: 100%;
+      margin-top: 0;
+      z-index: 1;
+      //opacity: 0;
+      overflow: hidden;
+      transition: 500ms ease 0s;
+
+      &.open {
+        height: 500px;
+      }
+
+      .close {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 2;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          height: 1px;
+          left: 0;
+          background: #888;
+          transform: rotate(45deg);
         }
 
-        .card {
-            @include size(300px);
-            display: inline-block;
-            vertical-align: top;
-            position: relative;
-
-            &:hover > .card-hover { opacity: 1}
-
-            .card-hover {
-                position: absolute;
-                background: #333;
-                background: rgba(48, 48, 48, 0.8);
-                width: 100%;
-                height: 100%;
-                opacity: 0;
-                transition: 300ms;
-                cursor: pointer;
-
-                span {
-                    display: block;
-                    padding: 10px 0;
-                    margin: 40px 20px 20px 20px;
-                    text-transform: uppercase;
-                    font-weight: normal;
-                    color: rgba(255, 255, 255, 0.9);
-                    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-                }
-            }
+        &:after {
+          transform: rotate(-45deg);
         }
+      }
 
-        .arrow {
-            border: solid transparent;
-            top: auto;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: relative;
-            pointer-events: none;
-            border-bottom-color: $dark-purple;
-            border-width: 15px;
-            left: 50%;
-            margin: -13px 0 0 -15px;
-            opacity: 0;
+      h3 {
+        color: $white;
+        text-align: left;
+        margin: 15px 0;
+        line-height: normal;
+      }
 
-            &.visible {
-                opacity: 1;
-            }
+      a {
+        padding: 5px 25px;
+        background-color: $light-green;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        color: $white;
+        text-transform: uppercase;
+        border-radius: 20px;
+        margin: 15px 5px 0 0;
+        cursor: pointer;
+        text-align: center;
+        white-space: nowrap;
+        float: left;
+        border: 0;
+
+        &:hover {
+          background-color: $green-hover;
         }
+      }
+    }
 
-        .expander {
-            background: $dark-purple;
-            color: $light-gray;
-            position: absolute;
-            top: auto;
-            height: 0;
-            left: 0;
-            width: 100%;
-            margin-top: 0;
-            z-index: 1;
-            //opacity: 0;
-            overflow: hidden;
-            transition: 500ms ease 0s;
+    .description {
+      height: 100%;
 
-            &.open {
-                height: 500px;
-            }
+      .full-image,
+      .details {
+        @include size(50%, 100%);
+        float: left;
+        padding: 30px 30px;
+      }
 
-            .close {
-                position: absolute;
-                width: 40px;
-                height: 40px;
-                top: 20px;
-                right: 20px;
-                cursor: pointer;
+      .full-image {
+        position: relative;
 
-                &:before, &:after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    top: 50%;
-                    height: 1px;
-                    left: 0;
-                    background: #888;
-                    transform: rotate(45deg);
-                }
-
-                &:after {
-                    transform: rotate(-45deg);
-                }
-            }
-
-            h3 {
-                color: $white;
-                text-align: left;
-                margin: 10px 0 0;
-            }
-
-            a {
-                padding: 5px 25px;
-                background-color: $light-green;
-                font-size: 0.8em;
-                letter-spacing: 2px;
-                color: $white;
-                text-transform: uppercase;
-                border-radius: 20px;
-                margin: 15px 5px 0 0;
-                cursor: pointer;
-                text-align: center;
-                white-space: nowrap;
-                float: left;
-                border: 0;
-
-                &:hover {
-                    background-color: $green-hover;
-                }
-            }
+        img {
+          max-height: 100%;
         }
+      }
 
-        .description {
-            height: 100%;
+      .details {
+        line-height: 1.5em;
+        color: $white;
+        font-size: 0.9em;
+        padding-bottom: 20px;
+        text-align: justify;
+        max-width: 650px;
+      }
+    }
+  }
 
-            .full-image, .details {
-                @include size(50%, 100%);
-                float: left;
-                padding: 30px 30px;
-            }
-
-            .full-image {
-                position: relative;
-
-                img { 
-                    max-height: 100%;
-                }
-            }
-
-            .details {
-                line-height: 1.5em;
-                color: $white;
-                font-size: 0.9em;
-                padding-bottom: 20px;
-                text-align: justify;
-                max-width: 650px;
-            }
-        }
-    }	
+  .bottom-portfolio {
+    display: block;
+  }
 }
-

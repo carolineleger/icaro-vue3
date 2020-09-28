@@ -26,7 +26,7 @@
     .footer-container { width: 100%!important;}
 }
 
-@media   screen and(max-width: 800px){
+@media  screen and(max-width: 800px){
     h2{font-size: 2em!important;}
     .about-container td {line-height:1.5em!important; font-size: 0.9em!important;}
     .couch {width: 200px!important; margin-left: -40px!important;}
@@ -41,6 +41,11 @@
     .about-CV .button{margin:20px auto!important}
     .about-description {padding-bottom: 280px!important}
     .about-wrapper .separation {height:40px!important}
+    .portfolio .expander.open { height: 1000px!important;}
+    .item.extended { height: 1000px!important; }
+    .portfolio .full-image { padding: 60px 30px 0!important }
+    .portfolio .full-image img { max-height: 400px!important;}
+    .portfolio .details, .portfolio .full-image { width: 100%!important; float:none!important; height: auto!important}
 }
 
 @media  screen and (max-width: 600px){
@@ -66,6 +71,8 @@
     .cocci  {width:15px!important}
     .couch-container, .light, .totoro-eyes {width:380px!important; height: 200px!important}
     .about-description {padding-bottom: 250px!important}
+    .logo-wrapper { padding: 0!important; }
+    .portfolio .details { line-height: 1.3em!important; text-align: left!important; padding: 15px!important}
 
 }
 
@@ -81,6 +88,8 @@
     .about-container td {padding-left: 15px!important; padding-right: 15px!important}
     .animated2-hide {display: none!important}
     .animated2-show {display: block!important}
+    .portfolio-wrapper .portfolio .expander a { padding: 5px 15px!important }
+    h3 { line-height: 1em!important;}
 }
 
 
@@ -95,6 +104,8 @@
     .animated-text .text{margin-top:11px!important}
     .animated-text ul { padding-left: 80px!important}
     .about-container td {padding-left: 15px!important; padding-right: 15px!important}
+    .couch-container, .light, .totoro-eyes {width:320px!important; height: 200px!important}
     .animated2-hide {display: none!important}
     .animated2-show {display: block!important}
+    .logo-wrapper .logo { max-width: 130px!important }
 }

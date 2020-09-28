@@ -1,7 +1,8 @@
 <template>
  <div class="portfolio-wrapper">
    <div class="contenu">
-      <h1>Portfolio</h1>
+      <h1 class="wow fadeIn">Portfolio</h1>
+      <div class="underline"></div>
 
       <div class="portfolio" id="portfolio">
         <div class="item"
@@ -10,6 +11,7 @@
             :class="{'extended': i === cardVisible}">
 
             <div class="card"
+                 preLoad="300"
                  v-lazy:background-image="'http://icaro-designs.com/images/' + item.thumbnail"
                  v-on:click="toggleCard(i)">
                  <div class="card-hover">
@@ -38,7 +40,7 @@
       </div>
     </div>
 
-    <div id="bottomPortfolio"></div>
+    <img src="http://icaro-designs.com/images/bottom-portfolio.jpg" class="bottom-portfolio" />
   </div>
 </template>
 
