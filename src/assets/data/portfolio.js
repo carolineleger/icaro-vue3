@@ -102,7 +102,7 @@ export const portfolio = [
 		'img_title'     : '',
 		'button_list'   :
 		[
-			{ 'title':'Overview', 'url':'main1-overview.jpg', 'new_window' : true},
+			{ 'title':'Overview', 'url':'http://icaro-designs.com/images/main1-overview.jpg', 'new_window' : true},
 			{ 'title':'EIS Investment', 'url' : 'https://eisinvestment.co.uk/', 'new_window' : true },
 			{ 'title':'1on1 connect', 'url' : 'https://1on1connect.co.uk/', 'new_window' : true },
 		],
@@ -125,7 +125,7 @@ export const portfolio = [
 		'title'         : 'Business cards',
 		'description'   : "Tools used: Photoshop, Indesign <br/>  <br/> Example: City Road, TPG ",
 		'thumbnail'     : 'thumbs/businesscardsTPG.jpg',
-		'large'         : 'businesscardsTPG.jpg',
+		'large'         : 'TPG/businesscardsTPG.jpg',
 		'img_title'     : '',
 		'button_list'   : [
 			{ 'title':'Example1', 'url' : 'http://icaro-designs.com/images/TPG/businesscardsTPG.jpg', 'new_window' : true },

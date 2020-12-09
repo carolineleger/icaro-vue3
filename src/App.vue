@@ -1,14 +1,12 @@
 <template>
-  <div id="app" class="full">
-    <LoadingScreen v-if="isLoading" />
+  <div id="app" class="full" v-bind:class="{'no-scroll': !loaded}">
+    <LoadingScreen v-if="!loaded" />
 
-    <div v-if="!isLoading">
-      <Header />
-      <About />
-      <Portfolio />
-      <Clients />
-      <Footer />
-    </div>
+    <Header />
+    <About />
+    <Portfolio />
+    <Clients />
+    <Footer />
 
   </div>
 </template>
@@ -28,7 +26,12 @@ export default {
   components: { About, Header, Portfolio, Clients, Footer, LoadingScreen },
   mounted() { 
     new WOW().init()
-  }
+  },
+   computed: {
+    loaded() {
+      return this.$store.state.loaded
+    }
+  },
 }
 </script>
 

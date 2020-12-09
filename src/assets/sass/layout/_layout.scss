@@ -17,11 +17,24 @@ body {
   font-size: 17px;
   margin: auto;
   color: $white;
-  overflow: initial !important;
+}
 
-  &.no-scroll {
-    overflow: hidden;
-  }
+.no-scroll {
+  overflow: hidden;
+}
+
+.loading-screen {
+  @include position(absolute, 0,0,0,0);
+  width: 100%;
+  height: 100%;
+  background-color: $dark-purple;
+  z-index: 999;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .main-content {
