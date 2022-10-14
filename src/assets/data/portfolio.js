@@ -2,12 +2,13 @@
 export const portfolio = [
 	{
 		'title'         : 'Web Apps',
-		'description'   : "Tasks: I built a web app for Virgin using VueJS. It involved animations and connecting to an existing microphone recording/analyzing library. Also another VueJS App for British Paint. <br/> <br/> Tools used: VueJS, Sass <br/> <br/> Client: Virgin through DDB",
+		'description'   : "Tasks: I worked on multiple web apps. At my work at Intelematics, I worked on different apps related to traffic data and cars. They were built with ReactJS and Angular 8+. Also you can find some small apps I built for a digital agency. One of them is a web app for Virgin using VueJS. It involved animations and connecting to an existing microphone recording/analyzing library(now disconnected). Also another VueJS App for British Paint. <br/> <br/> Tools used: ReactJS, VueJS, Angular 8+, Sass, OpenLayers <br/> <br/> Client: Virgin through DDB",
 		'thumbnail'     : 'thumbs/virgin.jpg',
 		'large'         : 'virgin.jpg',
 		'img_title'     : '',
 		'button_list'   :
 		[
+			{ 'title':'Intelematics app example', 'url' : 'http://icaro-designs.com/images/insight.png', 'new_window' : true },
 			{ 'title':'British Paint web app', 'url' : 'https://icaro-designs.com/projects/britishpaint/', 'new_window' : true },	
 			{ 'title':'Virgin web app', 'url' : 'https://icaro-designs.com/projects/virgin/', 'new_window' : true },	
 		],
@@ -27,16 +28,16 @@ export const portfolio = [
 	},
 	{
 		'title'         : 'Web development',
-		'description'   : 'Tasks: I built or improved many websites including Intelematics (Wordpress), Westpac Business of Tomorrow (Umbraco), and 2 UK Financial websites (2020 freelance extra work, Design + Wordpress built).<br/> <br/>Tools used: Wordpress, Joomla, Html/Css, Javascript, Php <br/> <br/>Example: Westpac BoT',
+		'description'   : 'Tasks: I built or improved many websites including Intelematics (Wordpress, whole rebranding), Westpac Business of Tomorrow (Umbraco), and some Financial websites fron the UK (freelance work, Design + Wordpress built).<br/> <br/>Tools used: Wordpress, Joomla, Html/Css, Javascript, Php <br/> <br/>Example: Westpac BoT',
 		'thumbnail'     : 'thumbs/cityroad-web.jpg',
 		'large'         : 'webdev.png',
 		'img_title'     : '',
 		'button_list'   :
 		[
-			{ 'title':'Intelematics', 'url' : 'https://www.intelematics.com/suna/', 'new_window' : true },
+			{ 'title':'Intelematics', 'url' : 'https://www.intelematics.com/', 'new_window' : true },
 			{ 'title':'Westpac BoT', 'url' : 'https://businessesoftomorrow.com.au/', 'new_window' : true },
+			{ 'title':'Trading investment', 'url' : 'https://www.tradingandinvestmentnews.co.uk/', 'new_window' : true },
 			{ 'title':'EIS Investment', 'url' : 'https://eisinvestment.co.uk/', 'new_window' : true },
-			{ 'title':'1on1 connect', 'url' : 'https://1on1connect.co.uk/', 'new_window' : true },
 			{ 'title':'CityRoad', 'url' : 'http://icaro-designs.com/images/cityroad.jpg', 'new_window' : true },
 		],
 		'tags'          : ['Dev']
@@ -104,7 +105,7 @@ export const portfolio = [
 		[
 			{ 'title':'Overview', 'url':'http://icaro-designs.com/images/main1-overview.jpg', 'new_window' : true},
 			{ 'title':'EIS Investment', 'url' : 'https://eisinvestment.co.uk/', 'new_window' : true },
-			{ 'title':'1on1 connect', 'url' : 'https://1on1connect.co.uk/', 'new_window' : true },
+			{ 'title':'Trading investment', 'url' : 'https://www.tradingandinvestmentnews.co.uk/', 'new_window' : true },
 		],
 		'tags'          : ['Design']
 	},

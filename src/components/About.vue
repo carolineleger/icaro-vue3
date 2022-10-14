@@ -9,7 +9,7 @@
                     <li>traveller</li>
                     <li class="animated-hide">cinema & video games fan</li>
                     <li class="animated-show">geek</li>
-                    <li class="animated2-hide">rock climber</li>
+                    <li class="animated2-hide">wannabe aerialist</li>
                     <li class="animated2-show">climber</li>
                     <li>bookworm</li>
                 </ul>
@@ -33,8 +33,8 @@
                     <b>About me:</b> Born in France, I was always interested in design and new technologies. My studies and work experiences have developed my sense of creativity and my technical skills.
                     Also passionate about travelling and discovery, I have worked in countries with rich cultures and landscapes, a great source of inspiration in everyday life!
                     <br/>
-                    <p>I'm now a permanent resident in Melbourne, where I work as a contractor/freelancer and keep improving my skills.
-                    Having knowledge in both design and development, I really like to multitask and I'm always up for a new challenge!</p> 
+                    <p>I'm now a permanent resident living in Brisbane area. Having knowledge in development and an eye for design, I really like to multitask and I'm always up for a new challenge! Currently, my favorite technologies are VueJS and ReactJS and my ideal job would be something with a bit of creativity. I'm now looking for remote work <u>only</u>, and have a preference for contracts over permanent roles. </p> 
+                     
                 </td> 
             </tr> 
         </table>		
