@@ -38,7 +38,7 @@
       margin: 14px 7px 0 7px;
 
       &.extended {
-        height: 820px;
+        height: 1050px;
       }
     }
 
@@ -126,7 +126,8 @@
       transition: 500ms ease 0s;
 
       &.open {
-        height: 500px;
+        padding: 30px;
+        height: 700px;
       }
 
       .close {

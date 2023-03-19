@@ -2,142 +2,175 @@
 // HEADER
 //⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
 
-.header-wrapper  {
-    @include size(100%, auto);
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    min-height: 350px;
+.header-wrapper {
+  @include size(100%, auto);
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  min-height: 350px;
 
-    .load-and-kill {
-        position: absolute;
-    }
-
-    ul {
-        @include size(100%);
-        margin: 0;
-        padding: 0;
-        position: relative;
-
-        .layer {
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            &.layer1 {
-                position: initial;
-            }
-        }
-    }
-
-    img {
-        display: block;
-    }
-    
-    .ban1, .ban3, .ban4{
-        @include size(100%);
-        min-width:700px;
-    }
-
-    .ban1{
-        background-image: url('../~@/assets/images/header/city.gif');
-        background-size: auto 100%;
-        background-repeat:repeat-x;
-    }
-
-    .ban3{
-        @include size(117%, auto);
-        max-width: 117%;
-        margin-left: -100px;
-        min-width:810px;
-    }
-  
-    .ban4 {
-        @include size(100%, auto);
-        max-width: 100%!important;
-        min-width:700px;
-    }
-
-    .cocci {
-        @include size(20px, auto);
-        @include position(absolute,20%, null, null, -100px);
-        z-index:20;
-        -webkit-animation: cocci-move 20s ease-out infinite;
-        animation: cocci-move 20s ease-out infinite;
-        animation-delay: 2s;
-    }
-
-    @-webkit-keyframes cocci-move {
-        0% {left:-100px}
-        2% {transform: rotate(60deg)}
-        30% {left:41%; top: 75%; transform: rotate(60deg)}
-        40% {left:41%; top: 75%; transform: rotate(40deg)}
-        100% {left:120%; top: 60%}	
-    }
-    
-    @keyframes cocci-move {
-        0% {left:-50px}
-        2% {transform: rotate(60deg)}
-        30% {left:41%; top: 75%; transform: rotate(60deg)}
-        40% {left:41%; top: 75%; transform: rotate(40deg)}
-        100% {left:120%; top: 60%}	
-    }
-
-    .screen {
-        @include position(absolute, 40.3%, null, null, 70.4%);
-        @include size(12.8%);
-        background-color: black;
-        margin-left: -100px;
-        background-size: 100% auto;
-        background-repeat: repeat-y;
-        background-image: url('../~@/assets/images/header/code.jpg');
-
-        -webkit-animation: code-move 25s linear infinite;
-        animation: code-move 25s linear infinite;
-
-    }
-
-    @keyframes code-move {
-        0% {background-position: top;}
-        100% {background-position: bottom;}	
-    }
-
-
-    .introbloc {
-        @include position(absolute, 0, null, null, null);
-        width: 100%;
-        margin-top: 19%;
-        padding-left: 10%;
-        text-align: center;
-        display: none;
-          
-        .introtext {
-            font-family: 'Handlee', sans-serif;
-            font-weight: bold;
-            font-size: 4em;
-            line-height: 1.2em;
-            color: $white;
-            text-align: center;
-        }
-        
-        .introtext2 {
-            font-size: 1.8em;
-            font-family:'Raleway', sans-serif;
-            text-transform: uppercase;
-            text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
-        }
-    }
-
-}
- 
-.updates {
+  .load-and-kill {
     position: absolute;
-    top: 0;
+  }
+
+  ul {
+    @include size(100%);
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    .layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &.layer1 {
+        position: initial;
+      }
+    }
+  }
+
+  img {
+    display: block;
+  }
+
+  .ban1,
+  .ban3,
+  .ban4 {
+    @include size(100%);
+    min-width: 700px;
+  }
+
+  .ban1 {
+    background-image: url("../~@/assets/images/header/city.gif");
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+  }
+
+  .ban3 {
+    @include size(117%, auto);
+    max-width: 117%;
+    margin-left: -100px;
+    min-width: 810px;
+  }
+
+  .ban4 {
+    @include size(100%, auto);
+    max-width: 100% !important;
+    min-width: 700px;
+  }
+
+  .cocci {
+    @include size(20px, auto);
+    @include position(absolute, 20%, null, null, -100px);
+    z-index: 20;
+    -webkit-animation: cocci-move 20s ease-out infinite;
+    animation: cocci-move 20s ease-out infinite;
+    animation-delay: 2s;
+  }
+
+  @-webkit-keyframes cocci-move {
+    0% {
+      left: -100px;
+    }
+    2% {
+      transform: rotate(60deg);
+    }
+    30% {
+      left: 41%;
+      top: 75%;
+      transform: rotate(60deg);
+    }
+    40% {
+      left: 41%;
+      top: 75%;
+      transform: rotate(40deg);
+    }
+    100% {
+      left: 120%;
+      top: 60%;
+    }
+  }
+
+  @keyframes cocci-move {
+    0% {
+      left: -50px;
+    }
+    2% {
+      transform: rotate(60deg);
+    }
+    30% {
+      left: 41%;
+      top: 75%;
+      transform: rotate(60deg);
+    }
+    40% {
+      left: 41%;
+      top: 75%;
+      transform: rotate(40deg);
+    }
+    100% {
+      left: 120%;
+      top: 60%;
+    }
+  }
+
+  .screen {
+    @include position(absolute, 40.3%, null, null, 70.4%);
+    @include size(12.8%);
     background-color: black;
-    color: white;
-    padding: 15px;
+    margin-left: -100px;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-image: url("../~@/assets/images/header/code.jpg");
+
+    -webkit-animation: code-move 25s linear infinite;
+    animation: code-move 25s linear infinite;
+  }
+
+  @keyframes code-move {
+    0% {
+      background-position: top;
+    }
+    100% {
+      background-position: bottom;
+    }
+  }
+
+  .introbloc {
+    @include position(absolute, 0, null, null, null);
     width: 100%;
+    margin-top: 19%;
+    padding-left: 10%;
     text-align: center;
-    opacity: 0.8;
-    font-size: 14px;
+    display: none;
+
+    .introtext {
+      font-family: "Handlee", sans-serif;
+      font-weight: bold;
+      font-size: 4em;
+      line-height: 1.2em;
+      color: $white;
+      text-align: center;
+    }
+
+    .introtext2 {
+      font-size: 1.8em;
+      font-family: "Raleway", sans-serif;
+      text-transform: uppercase;
+      text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    }
+  }
+}
+
+.updates {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 14px;
 }

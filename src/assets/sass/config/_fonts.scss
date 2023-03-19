@@ -1,32 +1,31 @@
-
 //⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
 // TYPOGRAPHY
 //⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
 
-@mixin opensans-light ($size, $align:null, $color:null) {
-	font-family: 'OpenSans Light';
-	font-size: $size;
-	text-align: $align;
-	color: $color;
+@mixin opensans-light($size, $align: null, $color: null) {
+  font-family: "OpenSans Light";
+  font-size: $size;
+  text-align: $align;
+  color: $color;
 }
 
-@mixin opensans-regular ($size, $align:null, $color:null) {
-	font-family: 'OpenSans Regular';
-	font-size: $size;
-	text-align: $align;
-	color: $color;
+@mixin opensans-regular($size, $align: null, $color: null) {
+  font-family: "OpenSans Regular";
+  font-size: $size;
+  text-align: $align;
+  color: $color;
 }
 
-@mixin opensans-semibold ($size, $align:null, $color:null) {
-	font-family: 'OpenSans Semibold';
-	font-size: $size;
-	text-align: $align;
-	color: $color;
+@mixin opensans-semibold($size, $align: null, $color: null) {
+  font-family: "OpenSans Semibold";
+  font-size: $size;
+  text-align: $align;
+  color: $color;
 }
 
-@mixin opensans-bold ($size, $align:null, $color:null) {
-	font-family: 'OpenSans Bold';
-	font-size: $size;
-	text-align: $align;
-	color: $color;
+@mixin opensans-bold($size, $align: null, $color: null) {
+  font-family: "OpenSans Bold";
+  font-size: $size;
+  text-align: $align;
+  color: $color;
 }
