@@ -12,6 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1500px;
+    margin: auto;
 
     .logo {
       max-width: 150px;

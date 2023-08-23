@@ -1,37 +1,34 @@
 <template>
-  <div id="app" class="full" v-bind:class="{ 'no-scroll': !loaded }">
+  <div id="app" class="full" :class="{ 'no-scroll': !loaded }">
     <LoadingScreen v-if="!loaded" />
 
-    <Header />
-    <About />
-    <Portfolio />
-    <Clients />
-    <Footer />
+    <HeaderSection />
+    <AboutSection />
+    <PortfolioSection />
+    <ClientsSection />
+    <FooterSection />
   </div>
 </template>
 
-<script>
+<script setup>
 import LoadingScreen from "./components/LoadingScreen.vue";
-import About from "./components/About.vue";
-import Header from "./components/Header.vue";
-import Portfolio from "./components/Portfolio.vue";
-import Clients from "./components/Clients.vue";
-import Footer from "./components/Footer.vue";
+import AboutSection from "./components/AboutSection.vue";
+import HeaderSection from "./components/HeaderSection.vue";
+import PortfolioSection from "./components/PortfolioSection.vue";
+import ClientsSection from "./components/ClientsSection.vue";
+import FooterSection from "./components/FooterSection.vue";
+import { computed, onMounted } from "vue";
 
 import { WOW } from "wowjs";
+import { useStore } from "vuex";
 
-export default {
-  name: "App",
-  components: { About, Header, Portfolio, Clients, Footer, LoadingScreen },
-  mounted() {
-    new WOW().init();
-  },
-  computed: {
-    loaded() {
-      return this.$store.state.loaded;
-    },
-  },
-};
+onMounted(() => {
+  new WOW().init();
+});
+
+const store = useStore();
+
+const loaded = computed(() => store.state.loaded);
 </script>
 
 <style lang="scss">

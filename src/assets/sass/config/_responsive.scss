@@ -14,6 +14,12 @@
     padding-left: 125px !important;
     margin-top: 5px !important;
   }
+  .header-wrapper .screen {
+    top: 41%;
+    left: 46.8%;
+    width: 11.5%;
+    height: 14%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -23,12 +29,36 @@
   .contenu {
     width: 100% !important;
   }
+  .header-wrapper {
+    .ban1 {
+      background-position: top center;
+    }
+
+    .ban3 {
+      margin-top: -30px;
+    }
+    .screen {
+      top: 40%;
+      left: 43%;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
   .animated-hide {
     display: none !important;
   }
+
+  .header-wrapper .screen {
+    top: 38%;
+    left: 42%;
+  }
+
+  .about-wrapper .vines {
+    margin-top: -70px;
+    height: 150px;
+  }
+
   .animated-show {
     display: block !important;
   }
@@ -64,12 +94,40 @@
   .plant {
     width: 100px !important;
   }
+
+  .portfolio {
+    .expander.open {
+      height: 1100px !important;
+    }
+    .details,
+    .full-image {
+      width: 100% !important;
+      float: none !important;
+      height: auto !important;
+    }
+    .full-image {
+      padding: 60px 30px 0 !important;
+    }
+    .full-image img {
+      max-height: 400px !important;
+    }
+    .details p {
+      font-size: 0.9em;
+    }
+  }
+  .item.extended {
+    height: 1100px !important;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .about-container td {
     width: 100% !important;
     display: block !important;
+  }
+  .header-wrapper .screen {
+    top: 37%;
+    left: 40%;
   }
   .couch-container,
   .light,
@@ -90,23 +148,30 @@
   .about-wrapper .separation {
     height: 40px !important;
   }
-  .portfolio .expander.open {
-    height: 1100px !important;
-  }
-  .item.extended {
-    height: 1100px !important;
-  }
-  .portfolio .full-image {
-    padding: 60px 30px 0 !important;
-  }
-  .portfolio .full-image img {
-    max-height: 400px !important;
-  }
-  .portfolio .details,
-  .portfolio .full-image {
-    width: 100% !important;
-    float: none !important;
-    height: auto !important;
+
+  .footer-wrapper,
+  .footer-wrapper .footer-container,
+  .footer-wrapper .footer-container .phone-container {
+    padding: 0;
+    height: 240px;
+
+    .phone-container {
+      width: 500px;
+    }
+
+    .phone,
+    .handler {
+      @include position(absolute, 70px, 40px, auto, auto);
+    }
+
+    .bulle {
+      right: 36px;
+      top: 43px;
+
+      &:after {
+        display: none;
+      }
+    }
   }
 }
 
@@ -117,10 +182,11 @@
   .ban4 {
     margin-left: -150px !important;
   }
-  .screen {
-    margin-left: -145px !important;
-    width: 83px !important;
+  .header-wrapper .screen {
+    top: 37%;
+    left: 23%;
   }
+
   .animated-text {
     font-size: 2.5em !important;
   }
@@ -130,24 +196,40 @@
   .animated-text ul {
     padding-left: 100px !important;
   }
-  .footer-container {
-    display: none !important;
-  }
-  .footer-responsive {
-    display: block !important;
+
+  .footer-wrapper,
+  .footer-wrapper .footer-container,
+  .footer-wrapper .footer-container .phone-container {
+    height: 200px;
+
+    .phone-container {
+      width: 360px;
+    }
+
+    .phone,
+    .handler {
+      @include position(absolute, 55px, 0, auto, auto);
+      width: 60px;
+      background-size: contain;
+    }
+
+    .bulle {
+      right: -20px;
+      top: -22px;
+    }
   }
 }
 
 @media screen and (max-width: 500px) {
   .ban3 {
-    margin-left: -290px !important;
+    margin-left: -250px !important;
   }
   .ban4 {
-    margin-left: -220px !important;
+    margin-left: -180px !important;
     margin-top: -5px !important;
   }
-  .screen {
-    margin-left: -165px !important;
+  .header-wrapper .screen {
+    left: 20%;
   }
   .animated-text {
     font-size: 2.2em !important;
@@ -184,24 +266,8 @@
 }
 
 @media screen and (max-width: 420px) {
-  .ban3 {
-    margin-left: -310px !important;
-    min-width: 750px !important;
-  }
-  .ban4,
-  .ban1 {
-    margin-left: -260px !important;
-    min-width: 650px !important;
-  }
-  .ban1 {
-    margin-left: -200px !important;
-  }
   .header-wrapper {
     min-height: 310px !important;
-  }
-  .screen {
-    margin-left: -180px !important;
-    width: 79px !important;
   }
   .animated-text {
     font-size: 2em !important;
@@ -228,27 +294,14 @@
   h3 {
     line-height: 1em !important;
   }
+  .bulle {
+    right: -10px !important;
+  }
 }
 
 @media screen and (max-width: 360px) {
-  .ban3 {
-    margin-left: -340px !important;
-    min-width: 750px !important;
-  }
-  .ban4,
-  .ban1 {
-    margin-left: -280px !important;
-    min-width: 650px !important;
-  }
-  .ban1 {
-    margin-left: -200px !important;
-  }
   .header-wrapper {
     min-height: 310px !important;
-  }
-  .screen {
-    margin-left: -180px !important;
-    width: 79px !important;
   }
   .animated-text {
     font-size: 2em !important;

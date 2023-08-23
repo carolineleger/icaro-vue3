@@ -1,12 +1,22 @@
-import Vue from 'vue'
-import App from './App.vue'
-import VueLazyload from 'vue-lazyload'
-import store from './store'
+import { createApp } from "vue";
+import App from "./App.vue";
+import VueLazyload from "vue-lazyload";
 
-Vue.config.productionTip = false
-Vue.use(VueLazyload)
+import { createStore } from "vuex";
 
-new Vue({
-  store,
-  render: h => h(App),
-}).$mount('#app')
+// Create a new store instance.
+const store = createStore({
+  state: {
+    loaded: false,
+  },
+  mutations: {
+    imageLoaded(state) {
+      state.loaded = true;
+    },
+  },
+});
+
+const app = createApp(App);
+app.use(store);
+app.use(VueLazyload);
+app.mount("#app");

@@ -8,6 +8,7 @@
   position: relative;
   display: inline-block;
   min-height: 350px;
+  background-color: $header-brown;
 
   .load-and-kill {
     position: absolute;
@@ -18,6 +19,8 @@
     margin: 0;
     padding: 0;
     position: relative;
+    max-width: 2560px;
+    margin: auto;
 
     .layer {
       position: absolute;
@@ -42,16 +45,20 @@
   }
 
   .ban1 {
-    background-image: url("../~@/assets/images/header/city.gif");
-    background-size: auto 100%;
+    background-image: url("../~@/assets/images/header/city.webp");
+    background-size: 800px auto;
     background-repeat: repeat-x;
+    background-position: top 50px center;
+    width: 105%;
+    max-width: 105%;
   }
 
   .ban3 {
-    @include size(117%, auto);
-    max-width: 117%;
-    margin-left: -100px;
+    @include size(112%, auto);
+    max-width: 112%;
+    margin-left: -70px;
     min-width: 810px;
+    margin-top: -50px;
   }
 
   .ban4 {
@@ -76,13 +83,13 @@
     2% {
       transform: rotate(60deg);
     }
-    30% {
-      left: 41%;
+    25% {
+      left: 35%;
       top: 75%;
       transform: rotate(60deg);
     }
-    40% {
-      left: 41%;
+    35% {
+      left: 35%;
       top: 75%;
       transform: rotate(40deg);
     }
@@ -99,14 +106,14 @@
     2% {
       transform: rotate(60deg);
     }
-    30% {
-      left: 41%;
-      top: 75%;
+    25% {
+      left: 33%;
+      top: 67%;
       transform: rotate(60deg);
     }
-    40% {
-      left: 41%;
-      top: 75%;
+    35% {
+      left: 33%;
+      top: 67%;
       transform: rotate(40deg);
     }
     100% {
@@ -116,13 +123,11 @@
   }
 
   .screen {
-    @include position(absolute, 40.3%, null, null, 70.4%);
-    @include size(12.8%);
-    background-color: black;
-    margin-left: -100px;
+    @include position(absolute, 40%, null, null, 45%);
+    @include size(11%, 13%);
     background-size: 100% auto;
     background-repeat: repeat-y;
-    background-image: url("../~@/assets/images/header/code.jpg");
+    background-image: url("../~@/assets/images/header/code.webp");
 
     -webkit-animation: code-move 25s linear infinite;
     animation: code-move 25s linear infinite;

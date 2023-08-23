@@ -7,13 +7,23 @@
   text-align: center;
   margin: -14px auto auto auto;
   color: $white;
-  background-color: $purple;
+  background-color: $brown;
   background-image: url("~@/assets/images/about-bg.jpg");
   background-repeat: repeat;
   border-bottom: solid 15px #7f7272;
+  border-top: solid 4px #000;
+
+  .vines {
+    @include size(100%, 250px);
+    margin-top: -90px;
+    background-image: url("~@/assets/images/vines.webp");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   .about-container {
-    padding: 80px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
     width: 70%;
     margin: auto;
     max-width: 1000px;
@@ -288,7 +298,7 @@
     .totoro-eyes {
       @include size(472px, 250px);
       @include position(absolute, null, null, 0, 0);
-      background-image: url("~@/assets/images/couch.png");
+      background-image: url("~@/assets/images/couch.webp");
       background-repeat: no-repeat;
       background-size: auto 100%;
       background-position: bottom;
@@ -297,10 +307,10 @@
     }
 
     .light {
-      background-image: url("~@/assets/images/light.png");
+      background-image: url("~@/assets/images/light.webp");
     }
     .totoro-eyes {
-      background-image: url("~@/assets/images/totoro-eyes.png");
+      background-image: url("~@/assets/images/totoro-eyes.webp");
     }
   }
 
@@ -308,7 +318,7 @@
     @include position(absolute, null, null, 0, 0);
     @include size(100%, 70px);
     border-top: solid 5px black;
-    background-color: #444;
+    background-color: #2c1610;
     opacity: 0.7;
     z-index: 0;
   }
