@@ -3,7 +3,7 @@
 //⦿⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦂⦿
 
 .footer-wrapper {
-  @include size(100%, 305px);
+  @include size(100%, 325px);
   background-color: white;
   position: relative;
 
@@ -47,12 +47,12 @@
     }
 
     .phone-container {
-      @include size(550px, 300px);
+      @include size(550px, 325px);
       position: relative;
 
       .phone,
       .handler {
-        @include position(absolute, 102px, 15px, auto, auto);
+        @include position(absolute, 128px, 13px, auto, auto);
         @include size(70px, 63px);
         background-image: url("../~@/assets/images/phone.webp");
         cursor: pointer;
@@ -103,7 +103,7 @@
     bottom: 0;
     width: 100%;
     height: 90px;
-    background-color: #bfa58f;
+    background-color: #877566;
     border-top: solid 6px #422b31;
     z-index: 0;
   }

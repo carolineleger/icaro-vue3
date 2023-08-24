@@ -2,7 +2,7 @@ export const portfolio = [
   {
     title: "Web development",
     description:
-      "Tasks: I rebranded the Shopify website Wilde using the Shopify headless platform (Hydrogen) and ReactJS, focusing on animations and incorporating existing store products/plugins. <br/><br/> I developed frontend pages for the Streaming/NFT site RAD emphasizing reusable components. For the management app Gestaltra, I created a simple VueJS landing page. <br/> <br/> Another project involved a data-intensive website for the NSW Education Department, rebuilding a platform for schools to input census data. <br/> <br/> At Intelematics, I initiated the development of a Carsales.com-like site for RACV, still unreleased. <br/><br/> Tools: ReactJS, VueJS, Angular, Shopify Hydrogen, Tailwind, GraphQL, Typescript, REST APIs",
+      "Tasks: I rebranded the Shopify website Wilde using Shopify headless platform (Hydrogen) and ReactJS, focusing on animations and incorporating existing store products/plugins. <br/><br/> I developed frontend pages for the NFT site RAD emphasizing reusable components. For the management app Gestaltra, I created a simple VueJS landing page. <br/> <br/> Another project involved a data-intensive website for the NSW Education Department, rebuilding a platform for schools to input census data. <br/> <br/> At Intelematics, I initiated the development of a Carsales.com-like site for RACV, still unreleased. <br/><br/> Tools: ReactJS, VueJS, Angular, Shopify Hydrogen, Tailwind, GraphQL, Typescript, REST APIs",
     thumbnail: "thumbs/wilde.jpg",
     large: "webdev.webp",
     img_title: "",

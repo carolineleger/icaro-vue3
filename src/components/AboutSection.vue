@@ -10,8 +10,7 @@
             <li>traveller</li>
             <li class="animated-hide">cinema & video games fan</li>
             <li class="animated-show">geek</li>
-            <li class="animated2-hide">wannabe aerialist</li>
-            <li class="animated2-show">climber</li>
+            <li>rock climber</li>
             <li>bookworm</li>
           </ul>
         </div>

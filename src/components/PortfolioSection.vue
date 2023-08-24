@@ -2,7 +2,6 @@
   <section class="portfolio-wrapper">
     <div class="contenu">
       <h1 class="wow fadeIn">Portfolio</h1>
-      {{ cardVisible }}
       <div class="underline"></div>
 
       <div class="portfolio" id="portfolio">
