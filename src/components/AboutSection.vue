@@ -22,7 +22,7 @@
             <h2 class="wow fadeIn">
               I'm also a front end developer with an eye for design
             </h2>
-            <a href="CV.pdf" target="_blank">
+            <a href="CV.pdf" target="_blank" class="cy-CV">
               <div class="wow button rubberBand" data-wow-delay="1s">
                 Download CV
               </div>
@@ -30,7 +30,7 @@
 
             <div class="couch-container"></div>
             <div class="wow blink light"></div>
-            <a href="CV.pdf" target="_blank"
+            <a href="CV.pdf" target="_blank" class="cy-CV"
               ><div class="wow eye-blink totoro-eyes"></div
             ></a>
           </td>

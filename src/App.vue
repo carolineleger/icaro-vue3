@@ -27,8 +27,10 @@ onMounted(() => {
 });
 
 const store = useStore();
-
-const loaded = computed(() => store.state.loaded);
+let loaded;
+if (store) {
+  loaded = computed(() => store.state.loaded);
+}
 </script>
 
 <style lang="scss">

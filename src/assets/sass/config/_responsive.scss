@@ -232,7 +232,7 @@
     left: 20%;
   }
   .animated-text {
-    font-size: 2.2em !important;
+    font-size: 2.1em !important;
   }
   .animated-text .text {
     margin-top: 9px !important;
@@ -273,10 +273,10 @@
     }
   }
   .animated-text {
-    font-size: 2em !important;
+    font-size: 1.8em !important;
   }
   .animated-text .text {
-    margin-top: 11px !important;
+    margin-top: 13px !important;
   }
   .animated-text ul {
     padding-left: 80px !important;
@@ -291,8 +291,14 @@
   .animated2-show {
     display: block !important;
   }
-  .portfolio-wrapper .portfolio .expander a {
-    padding: 5px 15px !important;
+
+  .portfolio-wrapper .portfolio {
+    .expander a {
+      padding: 5px 15px !important;
+    }
+    .expander.open {
+      padding: 30px 20px;
+    }
   }
   h3 {
     line-height: 1em !important;
@@ -306,30 +312,11 @@
   .header-wrapper {
     min-height: 310px !important;
   }
-  .animated-text {
-    font-size: 2em !important;
-  }
-  .animated-text .text {
-    margin-top: 11px !important;
-  }
-  .animated-text ul {
-    padding-left: 80px !important;
-  }
-  .about-container td {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
   .couch-container,
   .light,
   .totoro-eyes {
     width: 320px !important;
     height: 200px !important;
-  }
-  .animated2-hide {
-    display: none !important;
-  }
-  .animated2-show {
-    display: block !important;
   }
   .logo-wrapper .logo {
     max-width: 130px !important;

@@ -11,7 +11,7 @@
             :class="{ open: decroche }"
           />
           <div class="bulle" :class="{ none: !decroche }">
-            <a href="tel:0421433621">0421 433 621</a>
+            <a href="tel:0421433621" class="phone-number">0421 433 621</a>
           </div>
         </div>
 
