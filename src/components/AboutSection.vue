@@ -36,20 +36,12 @@
           </td>
 
           <td width="55%" class="about-description wow fadeIn">
-            <b>About me:</b> Born in France, I have always had a keen interest
-            in design and new technologies. My academic studies and work
-            experiences have played a pivotal role in developing both my
-            creativity and technical skills. Additionally, I am deeply
-            passionate about travel and exploration, and I've had the privilege
-            to work in countries boasting rich cultures and stunning landscapes,
-            which have been a tremendous source of inspiration in my daily life.
+            <b>About me:</b> Originally from France and now based in the Brisbane area, I’m a front-end developer with a strong focus on building clean, accessible, and engaging web experiences. Over the past decade, I’ve worked across different countries and industries, combining design sensibility with technical problem-solving to bring ideas to life on the web.
             <br />
             <p>
-              Currently, I am an Australian citizen residing in the Brisbane
-              area. With a strong background in development and a sharp eye for
-              design, I thoroughly enjoy taking on multiple tasks and am always
-              eager to embrace new challenges. At this moment, my preferred
-              technologies include VueJS and ReactJS.
+              I enjoy working with modern frameworks like React and Vue, and I’m always exploring new ways to make the front-end more efficient and enjoyable to use. I’ve also led large-scale website migrations to headless architectures, helping teams modernize their stack and streamline their content workflows.
+            </p><p>
+              Outside of work, I like reading, writing, binge-watching movies and shows, and occasionally defying gravity with aerial arts or rock climbing.
             </p>
           </td>
         </tr>

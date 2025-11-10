@@ -6,14 +6,15 @@ export const portfolio = [
     link: "mable",
     thumbnail: "mable.jpg",
     labels: [
-      "react",
+      "next",
+      "contentful",
+      "headless",
       "wordpress",
       "jest",
       "cypress",
       "storybook",
       "storyblok",
       "ci/cd",
-      "github actions",
     ],
     content: [
       {
@@ -23,8 +24,8 @@ export const portfolio = [
             description: `
               <b>Mable owns multiple websites to connect social workers to people with disabilities or older adults.</b>
               <p>All websites are built using WordPress. While it's flexible and easy to use for non-technical people, it has its limitations and is considered an older technology.</p>
-              <p>One of my primary responsibilities was to investigate moving to a headless CMS to ensure both usability for content producers/designers and modern technological support. After evaluating several options, Storyblok emerged as the best fit for our requirements.</p>
-              <p>Using React as a front-end framework, I began rebuilding some of the websites, focusing on flexibility. My main goal was to provide a library of reusable components that non-technical users could easily understand and use.</p>
+              <p>One of my primary responsibilities was to explore moving to a headless CMS to balance usability for content producers and designers with modern technological support. I evaluated several options, including Storyblok and Contentful, conducting research, proofs of concept, and stakeholder discussions to determine the best fit for our requirements. Contentful ultimately emerged as the most suitable solution.</p>
+              <p>Using Next, I began rebuilding parts of the websites with a focus on flexibility and maintainability. A key part of this work was driving the initiative to create a reusable component library as a separate project, ensuring consistent UI, easier updates, and empowering non-technical users to assemble pages without developer intervention.</p>
             `,
             image: "mable1.png",
           },
