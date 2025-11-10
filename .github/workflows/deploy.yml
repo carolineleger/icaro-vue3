@@ -32,4 +32,4 @@ jobs:
         aws-region: us-east-1
     - run: |
         aws s3 sync dist/ s3://dev.carolineleger.com --delete
-        aws cloudfront create-invalidation --distribution-id d18iquc2dx5wpx --paths "/*"
+        aws cloudfront create-invalidation --distribution-id E3OWJ8YY524H1D --paths "/*"
