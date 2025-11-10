@@ -36,19 +36,20 @@
           </td>
 
           <td width="55%" class="about-description wow fadeIn">
-            <b>About me:</b> Born in France, I was always interested in design
-            and new technologies. My studies and work experiences have developed
-            my sense of creativity and my technical skills. Also passionate
-            about travelling and discovery, I have worked in countries with rich
-            cultures and landscapes, a great source of inspiration in everyday
-            life!
+            <b>About me:</b> Born in France, I have always had a keen interest
+            in design and new technologies. My academic studies and work
+            experiences have played a pivotal role in developing both my
+            creativity and technical skills. Additionally, I am deeply
+            passionate about travel and exploration, and I've had the privilege
+            to work in countries boasting rich cultures and stunning landscapes,
+            which have been a tremendous source of inspiration in my daily life.
             <br />
             <p>
-              I'm now an Australian citizen living in Brisbane area. Having
-              knowledge in development and an eye for design, I really like to
-              multitask and I'm always up for a new challenge! Currently, my
-              favorite technologies are VueJS and ReactJS. I'm looking for
-              remote work only, contracts or permanent.
+              Currently, I am an Australian citizen residing in the Brisbane
+              area. With a strong background in development and a sharp eye for
+              design, I thoroughly enjoy taking on multiple tasks and am always
+              eager to embrace new challenges. At this moment, my preferred
+              technologies include VueJS and ReactJS.
             </p>
           </td>
         </tr>

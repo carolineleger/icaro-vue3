@@ -15,5 +15,5 @@
 </template>
 
 <script type="ts" setup>
-const logosNum = 15
+const logosNum = 16
 </script>
