@@ -15,7 +15,7 @@
           </div>
         </div>
 
-        <a href="mailto:caroline@icaro-designs.com" class="mail-container"> </a>
+        <a href="mailto:caroline.c.leger@gmail.com" class="mail-container"> </a>
       </div>
     </div>
   </section>

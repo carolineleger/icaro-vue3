@@ -33,7 +33,7 @@ describe("icaro", () => {
     cy.get(".mail-container").should(
       "have.attr",
       "href",
-      "mailto:caroline@icaro-designs.com"
+      "mailto:caroline.c.leger@gmail.com"
     );
   });
 
